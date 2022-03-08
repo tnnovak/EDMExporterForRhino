@@ -8,11 +8,11 @@ The plugin does not export the EDM file itself, in fact all it does is to export
 
 Its an option for those who want to create simpler DCS 3D models in Rhino and have little experience with Blender.
 
-Since it uses Blender you will need:
+Since it uses Blender you will need pre-installed:
 
 1. [Rhino 7](https://www.rhino3d.com/download/)
 2. [Blender](https://www.blender.org/download/) for Windows
-3. [BLENDER EDM EXPORTER](https://github.com/tobi-be/BlenderEdmExporter) plugin installed in Blender (instruction on how to install it can be found at the plugin page)
+3. [BLENDER EDM EXPORTER](https://github.com/tobi-be/BlenderEdmExporter) plugin installed in Blender (instruction on how to install it can be found in the plugin page)
 
 The first time the **EDMExporterForRhino** plugin runs it asks for the blender.exe file location and for a python script included in the plugin ZIP file
 

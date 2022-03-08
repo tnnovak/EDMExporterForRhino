@@ -14,7 +14,7 @@ Since it uses Blender you will need:
 2. [Blender](https://www.blender.org/download/) for Windows
 3. [BLENDER EDM EXPORTER](https://github.com/tobi-be/BlenderEdmExporter) plugin for Blender
 
-The first time the EDMExporterForRhino plugin runs it asks for the blender.exe file location and for a python script included in the plugin ZIP file
+The first time the **EDMExporterForRhino** plugin runs it asks for the blender.exe file location and for a python script included in the plugin ZIP file
 
 ## Instruction to install the EDMExporterForRhino in Rhino:
 
@@ -23,7 +23,7 @@ The first time the EDMExporterForRhino plugin runs it asks for the blender.exe f
 3. Go to menu --> Tools then Options
 4. On the left pane choose Plugins 
 5. Then on the Right pane click the "Install..." button
-6. Go to the unziped file folder and select the EDMExporterForRhino.rhp and open
+6. Go to the unziped file folder select the **EDMExporterForRhino.rhp** and load it
 
 Now the pluign is installed in Rhino. You can call it in the command line by typing:
 
@@ -32,8 +32,9 @@ Now the pluign is installed in Rhino. You can call it in the command line by typ
 ## Instructions for using the plugin:
 
 The first time you run the plugin it will ask for:
-1. The blender.exe file location (usually at C:\Program Files\Blender Foundation\Blender 2.93) or at the fodler you had installed blender
-2. It will ask for the **EDMExporterForRhino.py** file. It is in the EDMExporterForRhino unzip folder you had downloaded
+
+1. The **blender.exe** file location (usually at **C:\Program Files\Blender Foundation\Blender XXX**) or at any other folder you had installed blender
+2. Then it will ask for the **EDMExporterForRhino.py** file. It is inside the EDMExporterForRhino unziped folder you had downloaded
 
 After the above is complete it will not asked for those anymore. Then you can use the plugin like this:
 

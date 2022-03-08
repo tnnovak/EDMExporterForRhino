@@ -7,7 +7,7 @@ Site: [https://tnnvk.com/](https://tnnvk.com/)
 
 This is a **very experimental** plugin to export **EDM files** for **DCS World** from Rhino.
 
-The plugin does not export the EDM file itself, in fact all it does is to export the 3D model to a **COLLADA** file and then it launches Blender in the background running a script that will load the **COLLADA** file and export to EDM using the [BLENDER EDM EXPORTER](https://github.com/tobi-be/BlenderEdmExporter) for Blender, all in background.
+The plugin does not export the EDM file itself, in fact all it does is to export the 3D model to a **COLLADA** file and then it launches Blender in the background running a script that will load the **COLLADA** file and export to EDM using the [BLENDER EDM EXPORTER](https://github.com/tobi-be/BlenderEdmExporter) for Blender, all in the background.
 
 Its an option for those who want to create simpler DCS 3D models in Rhino and have little experience with Blender.
 

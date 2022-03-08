@@ -31,15 +31,21 @@ Now the pluign is installed in Rhino. You can call it in the command line by typ
 
 ## Instructions for using the plugin:
 
+The first time you run the plugin it will ask for:
+1. The blender.exe file location (usually at C:\Program Files\Blender Foundation\Blender 2.93) or at the fodler you had installed blender
+2. It will ask for the **EDMExporterForRhino.py** file. It is in the EDMExporterForRhino unzip folder you had downloaded
+
+After the above is complete it will not asked for those anymore. Then you can use the plugin like this:
+
 1. Load or create the model you want to export
-2. In the Rhino Layers pane change the name of the layer to the texture file you want to export in the EDM file for that part of the model
-3. In the "material" item for the layer click, select "Custom" material and in the Color option click the button to load the texture file (with same name of the step 1)
+2. In the Rhino Layers pane change the name of the layer to the texture file name you want to export in the EDM file for that part of the model
+3. In the "material" item for the layer click, select "Custom" material and in the Color option click the button to load the texture file (the same texture file of the step 1)
 4. Repeat this for all the textures you want to have in the model, assigning each texture file for each layer 
-5. Assign to the different parts and object od the model the layer correspondent to the texture for tat part/object
-6. After all the parts / objects have a texture assigned type **EDMExporterForRhino** in the command line
-7. Select all the parts and object you want to export
-8. After the selection a Save Dialog window will appear. Select location and EDM filename to export
-9. After that the EDM file will exported. A popup window will display the Blender EDM output so you can check if the export process was successful.
+5. Assign to the each different part and objects of the model the layer correspondent to the texture for that part/object
+6. After all the parts/objects have a texture assigned type **EDMExporterForRhino** in the command line
+7. Select all the model you want to export
+8. After the selection is done a Save Dialog window will appear. Select location and EDM filename to export
+9. The EDM file will generated. Blender will run hidden in the background, export the file and then quit. A popup window will display the Blender EDM output so you can check if the export process was successful.
 
 ### UV maps are not working in this version. Only simple texturing.
 

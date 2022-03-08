@@ -44,7 +44,7 @@ After the above is complete it will not asked for those anymore. Then you can us
 
 1. Load or create the model you want to export
 2. In the Rhino Layers pane change the name of the layer to the texture file name you want to export in the EDM file for that part of the model
-3. In the "material" item for the layer click, select "Custom" material and in the Color option click the button to load the texture file (the same texture file of the step 1)
+3. In the "material" item for the layer click, select "Custom" material and in the Color option click the button to load the texture file (the same texture file of the step 2)
 4. Repeat this for all the textures you want to have in the model, assigning each texture file for each layer 
 5. Assign to the each different part and objects of the model the layer correspondent to the texture for that part/object
 6. After all the parts/objects have a texture assigned type **EDMExporterForRhino** in the command line

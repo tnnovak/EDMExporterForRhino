@@ -3,7 +3,7 @@
 ## DCS World EDM File Exporter for Rhino 7
 
 Author: **Toni Novak** - toninovak@gmail.com
-Site: [https://tnnvk.com/](https://tnnvk.com/)
+ [https://tnnvk.com/](https://tnnvk.com/)
 
 This is a **very experimental** plugin to export **EDM files** for **DCS World** from Rhino.
 

@@ -22,7 +22,7 @@ The first time the **EDMExporterForRhino** plugin runs it asks for the blender.e
 
 ## Instruction to install the EDMExporterForRhino in Rhino:
 
-1. Download EDMExportForRhino.zip file from the last release [here]() and unzip
+1. Download EDMExportForRhino.zip file from the last release [here](https://github.com/tnnovak/EDMExporterForRhino/releases/tag/1.0-beta) and unzip
 2. Open Rhino
 3. Go to menu --> Tools then Options
 4. On the left pane choose Plugins 

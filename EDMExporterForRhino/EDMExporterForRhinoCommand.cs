@@ -153,16 +153,12 @@ namespace EDMExporterForRhino
                 rhino_object.Attributes.Url = "Object" + oc.ToString();
 
                 rhino_object.Attributes.SetUserString("NameObj", "Object" + oc.ToString());
-
-                RhinoApp.WriteLine("Obj Name = " + rhino_object.Attributes.Name);
                 
-                RhinoApp.WriteLine("Obj Name = " + rhino_object.Attributes.ObjectId);
-                RhinoApp.WriteLine("Obj Name = " + rhino_object.Attributes.Url);
-
-
                 oc++;
 
             }
+
+            RhinoApp.WriteLine("Number of objects to export = " + oc.ToString());
 
             System.Windows.Forms.SaveFileDialog saveEDMFile = new System.Windows.Forms.SaveFileDialog();
 
@@ -180,8 +176,14 @@ namespace EDMExporterForRhino
 
                     doc.ExportSelected(colladaFilename);
 
-                    // Delete textures folder, we dont need it 
-                    Directory.Delete(colladaFilename.Replace(".dae",""),true);
+                    try
+                    {
+                        // Delete textures folder, we dont need it 
+                        Directory.Delete(colladaFilename.Replace(".dae", ""), true);
+                    }catch(Exception ex)
+                    {
+
+                    }
 
                 }
                 catch(Exception ex)
@@ -223,6 +225,10 @@ namespace EDMExporterForRhino
 
             // blender --background --python myscript.py
 
+            string output = "";
+
+            RhinoApp.WriteLine("Waiting file to be exported...");
+
             using (System.Diagnostics.Process pProcess = new System.Diagnostics.Process())
             {
                 pProcess.StartInfo.FileName = blendeEXEFilePath;
@@ -236,11 +242,22 @@ namespace EDMExporterForRhino
                 pProcess.StartInfo.CreateNoWindow = true; //not diplay a windows
                 pProcess.Start();
 
-                string output = pProcess.StandardOutput.ReadToEnd(); //The output result
+                output = pProcess.StandardOutput.ReadToEnd(); //The output result
 
-                Dialogs.ShowMessage(output, "Blender Result");
+                // Dialogs.ShowMessage(output, "Blender Result");
 
                 pProcess.WaitForExit();
+            }
+
+            RhinoApp.WriteLine("File exported.");
+
+            Form1 frmOutput = new Form1();
+            frmOutput.Show();
+            frmOutput.InsertText(output);
+
+            while(frmOutput.waitClosing)
+            {
+                Application.DoEvents();
             }
 
             return Result.Success;
